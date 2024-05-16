@@ -6,11 +6,11 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
-def index():
+def hello_hbnb():
     return "Hello HBNB!"
 
 @app.route("/hbnb", strict_slashes=False)
-def index():
+def hbnb():
     return "HBNB"
 
 if __name__ == "__main__":
